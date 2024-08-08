@@ -1,0 +1,1 @@
+Problem statement: People lack knowledge about market-standard salaries for their roles when they change employers. so the employee accepts a lower wage than what is considered market standard when a recruiter inquires about their expected salary.
