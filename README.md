@@ -5,5 +5,6 @@ Solution:
 Developed a multilinear regression model to forecast the salary of a data analyst role based on age, gender, education, and experience.
 
 datasource: https://www.kaggle.com/datasets/rkiattisak/salaly-prediction-for-beginer
+
 Limitation: At the moment, the model is only trained to forecast the role of Data Analyst.
 
