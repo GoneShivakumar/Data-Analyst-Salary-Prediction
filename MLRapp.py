@@ -4,6 +4,7 @@ import Prediction as pdt
 
 def main():
 
+    st.header("Salary Prediction for Data Analyst")
     with st.form(key='my_form'):
         age = st.number_input('Select Age',key='age')
         YOE = st.number_input('Select Years of Experience',key='yoe')
