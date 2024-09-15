@@ -6,8 +6,8 @@ def main():
 
     st.header("Salary Prediction for Data Analyst")
     with st.form(key='my_form'):
-        age = st.number_input('Select Age',key='age')
-        YOE = st.number_input('Select Years of Experience',key='yoe')
+        age = st.number_input('Select Age',min_value=0,max_value=100,key='age')
+        YOE = st.number_input('Select Years of Experience',min_value=0,max_value=60,key='yoe')
         GF = st.radio('Gender',['Female','Male'],horizontal=True,key='gf')
         st.write(GF)
         # GM = st.radio('Gender',['Female','Male'],horizontal=True,key='gm')
@@ -31,7 +31,8 @@ def main():
             vale = 1
 
         prdval = pdt.predict(age,YOE,valgf,valgm,valed,vale)
-        st.subheader(f"Your Salary could be {prdval[0]}")
+        prdctval = prdval[0].round()
+        st.subheader(f"Your Salary could be $ {prdctval}")
 
 if __name__ =='__main__':
     main()
