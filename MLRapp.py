@@ -6,7 +6,7 @@ def main():
 
     st.header("Salary Prediction for Data Analyst")
     with st.form(key='my_form'):
-        age = st.number_input('Select Age',min_value=0,max_value=100,key='age')
+        age = st.number_input('Select Age',min_value=21,max_value=100,key='age')
         YOE = st.number_input('Select Years of Experience',min_value=0,max_value=60,key='yoe')
         GF = st.radio('Gender',['Female','Male'],horizontal=True,key='gf')
         st.write(GF)
